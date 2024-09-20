@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+
+    <header
+      class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200"
+    >
+      <nav
+        class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex justify-between items-center gap-x-1">
+          <a
+            class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80"
+            href="#"
+            aria-label="Brand"
+            >RksDB</a
+          >
+
+          <!-- Collapse Button -->
+          <button
+            type="button"
+            class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            id="hs-header-base-collapse"
+            aria-expanded="false"
+            aria-controls="hs-header-base"
+            aria-label="Toggle navigation"
+            data-hs-collapse="#hs-header-base"
+          >
+            <svg
+              class="hs-collapse-open:hidden size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg
+              class="hs-collapse-open:block shrink-0 hidden size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- End Collapse Button -->
+        </div>
+
+        <!-- Collapse -->
+        <div
+          id="hs-header-base"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+          aria-labelledby="hs-header-base-collapse"
+        >
+          <div
+            class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+          >
+            <div
+              class="py-2 md:py-0 flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1"
+            >
+              <div class="grow"></div>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap items-center gap-x-1.5">
+                <a
+                  class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-100"
+                  href="#"
+                >
+                  Sign in
+                </a>
+                <a class="btn" href="#"> Get started </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- contents start  -->
+    <main class="flex gap-4">
+      <!-- Sidebar -->
+
+      <!-- Sidebar -->
+      <div
+        class="hs-overlay h-[91vh] [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden top-0 start-0 bottom-0 z-[60] w-64 border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+        role="dialog"
+        tabindex="-1"
+        aria-label="Sidebar"
+      >
+        <nav
+          class="hs-accordion-group p-6 w-full flex flex-col flex-wrap"
+          data-hs-accordion-always-open
+        >
+          <!-- Tree Root -->
+          <div
+            class="hs-accordion-treeview-root"
+            role="tree"
+            aria-orientation="vertical"
+          >
+            <!-- 1st Level Accordion Group -->
+            <div
+              class="hs-accordion-group"
+              role="group"
+              data-hs-accordion-always-open=""
+            >
+              <!-- 1st Level Accordion -->
+              <div
+                class="hs-accordion active"
+                role="treeitem"
+                aria-expanded="true"
+                id="hs-basic-tree-heading-one"
+              >
+                <!-- 1st Level Accordion Heading -->
+                <div
+                  class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                >
+                  <button
+                    class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    aria-expanded="true"
+                    aria-controls="hs-basic-tree-collapse-one"
+                  >
+                    <svg
+                      class="size-4 text-gray-800 dark:text-neutral-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path
+                        class="hs-accordion-active:hidden block"
+                        d="M12 5v14"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                  >
+                    <div class="flex items-center gap-x-3">
+                      <svg
+                        class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                        ></path>
+                      </svg>
+                      <div class="grow">
+                        <span
+                          class="text-sm text-gray-800 dark:text-neutral-200"
+                        >
+                          assets
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End 1st Level Accordion Heading -->
+
+                <!-- 1st Level Collapse -->
+                <div
+                  id="hs-basic-tree-collapse-one"
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                  role="group"
+                  aria-labelledby="hs-basic-tree-heading-one"
+                >
+                  <!-- 2nd Level Accordion Group -->
+                  <div
+                    class="hs-accordion-group ps-7 relative before:absolute before:top-0 before:start-3 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                    role="group"
+                    data-hs-accordion-always-open=""
+                  >
+                    <!-- 2nd Level Nested Accordion -->
+                    <div
+                      class="hs-accordion active"
+                      role="treeitem"
+                      aria-expanded="true"
+                      id="hs-basic-tree-sub-heading-one"
+                    >
+                      <!-- 2nd Level Accordion Heading -->
+                      <div
+                        class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                      >
+                        <button
+                          class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                          aria-expanded="true"
+                          aria-controls="hs-basic-tree-sub-collapse-one"
+                        >
+                          <svg
+                            class="size-4 text-gray-800 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path
+                              class="hs-accordion-active:hidden block"
+                              d="M12 5v14"
+                            ></path>
+                          </svg>
+                        </button>
+
+                        <div
+                          class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                        >
+                          <div class="flex items-center gap-x-3">
+                            <svg
+                              class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                              ></path>
+                            </svg>
+                            <div class="grow">
+                              <span
+                                class="text-sm text-gray-800 dark:text-neutral-200"
+                              >
+                                css
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End 2nd Level Accordion Heading -->
+
+                      <!-- 2nd Level Collapse -->
+                      <div
+                        id="hs-basic-tree-sub-collapse-one"
+                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                        role="group"
+                        aria-labelledby="hs-basic-tree-sub-heading-one"
+                      >
+                        <!-- 3rd Level Accordion Group -->
+                        <div
+                          class="hs-accordion-group ps-7 relative before:absolute before:top-0 before:start-3 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                          role="group"
+                          data-hs-accordion-always-open=""
+                        >
+                          <!-- 3rd Level Accordion -->
+                          <div
+                            class="hs-accordion active"
+                            role="treeitem"
+                            aria-expanded="true"
+                            id="hs-basic-tree-sub-level-two-heading-one"
+                          >
+                            <!-- 3rd Level Accordion Heading -->
+                            <div
+                              class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                            >
+                              <button
+                                class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                aria-expanded="true"
+                                aria-controls="hs-basic-tree-sub-level-two-collapse-one"
+                              >
+                                <svg
+                                  class="size-4 text-gray-800 dark:text-neutral-200"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="M5 12h14"></path>
+                                  <path
+                                    class="hs-accordion-active:hidden block"
+                                    d="M12 5v14"
+                                  ></path>
+                                </svg>
+                              </button>
+
+                              <div
+                                class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                              >
+                                <div class="flex items-center gap-x-3">
+                                  <svg
+                                    class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path
+                                      d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                                    ></path>
+                                  </svg>
+                                  <div class="grow">
+                                    <span
+                                      class="text-sm text-gray-800 dark:text-neutral-200"
+                                    >
+                                      main
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End 3rd Level Accordion Heading -->
+
+                            <!-- 3rd Level Collapse -->
+                            <div
+                              id="hs-basic-tree-sub-level-two-collapse-one"
+                              class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                              role="group"
+                              aria-labelledby="hs-basic-tree-sub-level-two-heading-one"
+                            >
+                              <div
+                                class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                              >
+                                <!-- 3rd Level Item -->
+                                <div
+                                  class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                                  role="treeitem"
+                                >
+                                  <div class="flex items-center gap-x-3">
+                                    <svg
+                                      class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path
+                                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                      ></path>
+                                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                    </svg>
+                                    <div class="grow">
+                                      <span
+                                        class="text-sm text-gray-800 dark:text-neutral-200"
+                                      >
+                                        main.css
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- End 3rd Level Item -->
+
+                                <!-- 3rd Level Item -->
+                                <div
+                                  class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                                  role="treeitem"
+                                >
+                                  <div class="flex items-center gap-x-3">
+                                    <svg
+                                      class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path
+                                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                      ></path>
+                                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                    </svg>
+                                    <div class="grow">
+                                      <span
+                                        class="text-sm text-gray-800 dark:text-neutral-200"
+                                      >
+                                        docs.css
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- End 3rd Level Item -->
+
+                                <!-- 3rd Level Item -->
+                                <div class="px-2">
+                                  <span
+                                    class="text-sm text-gray-800 dark:text-neutral-200"
+                                  >
+                                    README.txt
+                                  </span>
+                                </div>
+                                <!-- End 3rd Level Item -->
+                              </div>
+                            </div>
+                            <!-- End 3rd Level Collapse -->
+                          </div>
+                          <!-- End 3rd Level Accordion -->
+
+                          <!-- 3rd Level Accordion -->
+                          <div
+                            class="hs-accordion"
+                            role="treeitem"
+                            aria-expanded="false"
+                            id="hs-basic-tree-sub-level-two-heading-two"
+                          >
+                            <!-- 3rd Level Accordion Heading -->
+                            <div
+                              class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                            >
+                              <button
+                                class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                aria-expanded="false"
+                                aria-controls="hs-basic-tree-sub-level-two-collapse-two"
+                              >
+                                <svg
+                                  class="size-4 text-gray-800 dark:text-neutral-200"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="M5 12h14"></path>
+                                  <path
+                                    class="hs-accordion-active:hidden block"
+                                    d="M12 5v14"
+                                  ></path>
+                                </svg>
+                              </button>
+
+                              <div
+                                class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                              >
+                                <div class="flex items-center gap-x-3">
+                                  <svg
+                                    class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path
+                                      d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                                    ></path>
+                                  </svg>
+                                  <div class="grow">
+                                    <span
+                                      class="text-sm text-gray-800 dark:text-neutral-200"
+                                    >
+                                      tailwind
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End 3rd Level Accordion Heading -->
+
+                            <!-- 3rd Level Collapse -->
+                            <div
+                              id="hs-basic-tree-sub-level-two-collapse-two"
+                              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                              role="group"
+                              aria-labelledby="hs-basic-tree-sub-level-two-heading-two"
+                            >
+                              <div
+                                class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                              >
+                                <!-- 3rd Level Item -->
+                                <div
+                                  class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                                  role="treeitem"
+                                >
+                                  <div class="flex items-center gap-x-3">
+                                    <svg
+                                      class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path
+                                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                      ></path>
+                                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                    </svg>
+                                    <div class="grow">
+                                      <span
+                                        class="text-sm text-gray-800 dark:text-neutral-200"
+                                      >
+                                        input.css
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- End 3rd Level Item -->
+                              </div>
+                            </div>
+                            <!-- End 3rd Level Collapse -->
+                          </div>
+                          <!-- End 3rd Level Accordion -->
+
+                          <!-- 3rd Level Heading -->
+                          <div class="py-0.5 px-1.5" role="treeitem">
+                            <span
+                              class="text-sm text-gray-800 dark:text-neutral-200"
+                            >
+                              .gitignore
+                            </span>
+                          </div>
+                          <!-- End 3rd Level Heading -->
+                        </div>
+                        <!-- End 3rd Level Accordion Group -->
+                      </div>
+                      <!-- End 2nd Level Collapse -->
+                    </div>
+                    <!-- End 2nd Level Nested Accordion -->
+
+                    <!-- 2nd Level Nested Accordion -->
+                    <div
+                      class="hs-accordion"
+                      role="treeitem"
+                      aria-expanded="false"
+                      id="hs-basic-tree-sub-heading-two"
+                    >
+                      <!-- 2nd Level Accordion Heading -->
+                      <div
+                        class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                      >
+                        <button
+                          class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                          aria-expanded="false"
+                          aria-controls="hs-basic-tree-sub-collapse-two"
+                        >
+                          <svg
+                            class="size-4 text-gray-800 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path
+                              class="hs-accordion-active:hidden block"
+                              d="M12 5v14"
+                            ></path>
+                          </svg>
+                        </button>
+
+                        <div
+                          class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                        >
+                          <div class="flex items-center gap-x-3">
+                            <svg
+                              class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                              ></path>
+                            </svg>
+                            <div class="grow">
+                              <span
+                                class="text-sm text-gray-800 dark:text-neutral-200"
+                              >
+                                img
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End 2nd Level Accordion Heading -->
+
+                      <!-- 2nd Level Collapse -->
+                      <div
+                        id="hs-basic-tree-sub-collapse-two"
+                        class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                        role="group"
+                        aria-labelledby="hs-basic-tree-sub-heading-two"
+                      >
+                        <div
+                          class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                        >
+                          <!-- 2nd Level Item -->
+                          <div
+                            class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                            role="treeitem"
+                          >
+                            <div class="flex items-center gap-x-3">
+                              <svg
+                                class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                ></path>
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                <circle cx="10" cy="12" r="2"></circle>
+                                <path
+                                  d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"
+                                ></path>
+                              </svg>
+                              <div class="grow">
+                                <span
+                                  class="text-sm text-gray-800 dark:text-neutral-200"
+                                >
+                                  hero.jpg
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End 2nd Level Item -->
+
+                          <!-- 2nd Level Item -->
+                          <div
+                            class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                            role="treeitem"
+                          >
+                            <div class="flex items-center gap-x-3">
+                              <svg
+                                class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                ></path>
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                <circle cx="10" cy="12" r="2"></circle>
+                                <path
+                                  d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"
+                                ></path>
+                              </svg>
+                              <div class="grow">
+                                <span
+                                  class="text-sm text-gray-800 dark:text-neutral-200"
+                                >
+                                  tailwind.png
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End 2nd Level Item -->
+
+                          <!-- 2nd Level Item -->
+                          <div
+                            class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                            role="treeitem"
+                          >
+                            <div class="flex items-center gap-x-3">
+                              <svg
+                                class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                ></path>
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                <circle cx="10" cy="12" r="2"></circle>
+                                <path
+                                  d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"
+                                ></path>
+                              </svg>
+                              <div class="grow">
+                                <span
+                                  class="text-sm text-gray-800 dark:text-neutral-200"
+                                >
+                                  untitled.png
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End 2nd Level Item -->
+                        </div>
+                      </div>
+                      <!-- End 2nd Level Collapse -->
+                    </div>
+                    <!-- End 2nd Level Nested Accordion -->
+
+                    <!-- 2nd Level Nested Accordion -->
+                    <div
+                      class="hs-accordion"
+                      role="treeitem"
+                      aria-expanded="false"
+                      id="hs-basic-tree-sub-heading-three"
+                    >
+                      <!-- 2nd Level Accordion Heading -->
+                      <div
+                        class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                      >
+                        <button
+                          class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                          aria-expanded="false"
+                          aria-controls="hs-basic-tree-sub-collapse-three"
+                        >
+                          <svg
+                            class="size-4 text-gray-800 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path
+                              class="hs-accordion-active:hidden block"
+                              d="M12 5v14"
+                            ></path>
+                          </svg>
+                        </button>
+
+                        <div
+                          class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                        >
+                          <div class="flex items-center gap-x-3">
+                            <svg
+                              class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                              ></path>
+                            </svg>
+                            <div class="grow">
+                              <span
+                                class="text-sm text-gray-800 dark:text-neutral-200"
+                              >
+                                js
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End 2nd Level Accordion Heading -->
+
+                      <!-- 2nd Level Collapse -->
+                      <div
+                        id="hs-basic-tree-sub-collapse-three"
+                        class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                        role="group"
+                        aria-labelledby="hs-basic-tree-sub-heading-three"
+                      >
+                        <div
+                          class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                        >
+                          <!-- 2nd Level Item -->
+                          <div
+                            class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                            role="treeitem"
+                          >
+                            <div class="flex items-center gap-x-3">
+                              <svg
+                                class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                                ></path>
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                <circle cx="10" cy="12" r="2"></circle>
+                                <path
+                                  d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"
+                                ></path>
+                              </svg>
+                              <div class="grow">
+                                <span
+                                  class="text-sm text-gray-800 dark:text-neutral-200"
+                                >
+                                  preline.jpg
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End 2nd Level Item -->
+                        </div>
+                      </div>
+                      <!-- End 2nd Level Collapse -->
+                    </div>
+                    <!-- End 2nd Level Nested Accordion -->
+                  </div>
+                  <!-- 2nd Level Accordion Group -->
+                </div>
+                <!-- End 1st Level Collapse -->
+              </div>
+              <!-- End 1st Level Accordion -->
+
+              <!-- 1st Level Accordion -->
+              <div
+                class="hs-accordion"
+                role="treeitem"
+                aria-expanded="false"
+                id="hs-basic-tree-heading-two"
+              >
+                <!-- 1st Level Accordion Heading -->
+                <div
+                  class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                >
+                  <button
+                    class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    aria-expanded="false"
+                    aria-controls="hs-basic-tree-collapse-two"
+                  >
+                    <svg
+                      class="size-4 text-gray-800 dark:text-neutral-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path
+                        class="hs-accordion-active:hidden block"
+                        d="M12 5v14"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                  >
+                    <div class="flex items-center gap-x-3">
+                      <svg
+                        class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                        ></path>
+                      </svg>
+                      <div class="grow">
+                        <span
+                          class="text-sm text-gray-800 dark:text-neutral-200"
+                        >
+                          scripts
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End 1st Level Accordion Heading -->
+
+                <!-- 1st Level Collapse -->
+                <div
+                  id="hs-basic-tree-collapse-two"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="group"
+                  aria-labelledby="hs-basic-tree-heading-two"
+                >
+                  <div
+                    class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                  >
+                    <!-- 1st Level Item -->
+                    <div
+                      class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                      role="treeitem"
+                    >
+                      <div class="flex items-center gap-x-3">
+                        <svg
+                          class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                          ></path>
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                        </svg>
+                        <div class="grow">
+                          <span
+                            class="text-sm text-gray-800 dark:text-neutral-200"
+                          >
+                            preline.js
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End 1st Level Item -->
+
+                    <!-- 1st Level Item -->
+                    <div
+                      class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                      role="treeitem"
+                    >
+                      <div class="flex items-center gap-x-3">
+                        <svg
+                          class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                          ></path>
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                        </svg>
+                        <div class="grow">
+                          <span
+                            class="text-sm text-gray-800 dark:text-neutral-200"
+                          >
+                            tailwind.js
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End 1st Level Item -->
+
+                    <!-- 1st Level Item -->
+                    <div
+                      class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                      role="treeitem"
+                    >
+                      <div class="flex items-center gap-x-3">
+                        <svg
+                          class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                          ></path>
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                        </svg>
+                        <div class="grow">
+                          <span
+                            class="text-sm text-gray-800 dark:text-neutral-200"
+                          >
+                            www.js
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End 1st Level Item -->
+                  </div>
+                </div>
+                <!-- End 1st Level Collapse -->
+              </div>
+              <!-- End 1st Level Accordion -->
+
+              <!-- 1st Level Accordion -->
+              <div
+                class="hs-accordion"
+                role="treeitem"
+                aria-expanded="false"
+                id="hs-basic-tree-heading-three"
+              >
+                <!-- 1st Level Accordion Heading -->
+                <div
+                  class="hs-accordion-heading py-0.5 flex items-center gap-x-0.5 w-full"
+                >
+                  <button
+                    class="hs-accordion-toggle size-6 flex justify-center items-center hover:bg-gray-100 rounded-md focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    aria-expanded="false"
+                    aria-controls="hs-basic-tree-collapse-three"
+                  >
+                    <svg
+                      class="size-4 text-gray-800 dark:text-neutral-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path
+                        class="hs-accordion-active:hidden block"
+                        d="M12 5v14"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="grow hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-1.5 rounded-md cursor-pointer"
+                  >
+                    <div class="flex items-center gap-x-3">
+                      <svg
+                        class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                        ></path>
+                      </svg>
+                      <div class="grow">
+                        <span
+                          class="text-sm text-gray-800 dark:text-neutral-200"
+                        >
+                          templates
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End 1st Level Accordion Heading -->
+
+                <!-- 1st Level Collapse -->
+                <div
+                  id="hs-basic-tree-collapse-three"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="group"
+                  aria-labelledby="hs-basic-tree-heading-three"
+                >
+                  <div
+                    class="ms-3 ps-3 relative before:absolute before:top-0 before:start-0 before:w-0.5 before:-ms-px before:h-full before:bg-gray-100 dark:before:bg-neutral-700"
+                  >
+                    <!-- 1st Level Item -->
+                    <div
+                      class="hs-accordion-selectable hs-accordion-selected:bg-gray-100 dark:hs-accordion-selected:bg-neutral-700 px-2 rounded-md cursor-pointer"
+                      role="treeitem"
+                    >
+                      <div class="flex items-center gap-x-3">
+                        <svg
+                          class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                          ></path>
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                        </svg>
+                        <div class="grow">
+                          <span
+                            class="text-sm text-gray-800 dark:text-neutral-200"
+                          >
+                            index.html
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End 1st Level Item -->
+                  </div>
+                </div>
+                <!-- End 1st Level Collapse -->
+              </div>
+              <!-- End 1st Level Accordion -->
+            </div>
+            <!-- End 1st Level Accordion Group -->
+          </div>
+          <!-- End Tree Root -->
+        </nav>
+      </div>
+      <!-- End Sidebar -->
+      <div class="w-full px-2">
+        <div class="databse-container mt-2 w-full">
+          <div
+            class="w-full flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+          >
+            <div class="items-center p-4 md:p-5">
+              <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                Messages
+              </h3>
+              <div>
+                <ul class="flex items-center gap-10">
+                  <li class="flex flex-col">
+                    Storage Size
+                    <span class="text-xs text-gray-800 text-center">24,58 KB</span>
+                  </li>
+                  <li class="flex flex-col">
+                    Documents <span class="text-xs text-center text-gray-800">4</span>
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-primary decoration-2 hover:text-primary hover:underline focus:underline focus:outline-none focus:text-primary disabled:opacity-50 disabled:pointer-events-none"
+                href="#"
+              >
+                View Data
+                <svg
+                  class="shrink-0 size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- contents ends  -->
+  </body>
+</html>

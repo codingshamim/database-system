@@ -1,0 +1,35 @@
+{
+  "name": "database-system",
+  "version": "1.0.0",
+  "description": "This project is a database system application designed to store, manage, and retrieve data efficiently. Built with modern technologies, it is scalable, secure, and optimized for real-time data handling.",
+  "main": "app.js",
+  "scripts": {
+    "start" : "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammodshamim/database-system.git"
+  },
+  "keywords": [
+    "database",
+    "databasemanagement"
+  ],
+  "author": "Md Shamim Mia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammodshamim/database-system/issues"
+  },
+  "homepage": "https://github.com/muhammodshamim/database-system#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0"
+  }
+}
